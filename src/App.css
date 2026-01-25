@@ -1,42 +1,26 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.page-root { position: relative; min-height: 100vh; overflow: hidden; }
+.background-layer { position: fixed; inset: 0; z-index: 0; background: radial-gradient(ellipse at center, rgba(30,30,30,0.6), #000 70%); }
+.site-content { position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; padding: 4rem 1rem; gap: 2rem; color: #fff; }
+
+.hero { display: flex; gap: 2rem; align-items: center; max-width: 900px; width: 100%; }
+.avatar { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; flex: 0 0 120px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); border: 2px solid rgba(255,255,255,0.06); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.intro h1 { margin: 0 0 0.4rem 0; font-size: 1.8rem; }
+.intro p { margin: 0; color: rgba(255,255,255,0.85); }
+
+.links-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1rem; width: 100%; max-width: 960px; margin-top: 1.5rem; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.06); padding: 1.2rem; border-radius: 12px; color: #fff; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; display: flex; flex-direction: column; gap: .5rem; }
+.card h3 { margin: 0; font-size: 1.05rem; }
+.card p { margin: 0; font-size: 0.95rem; color: rgba(255,255,255,0.7); }
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.6); }
+
+@media (max-width: 900px) {
+  .hero { flex-direction: column; text-align: center; }
+  .links-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@media (max-width: 480px) {
+  .links-grid { grid-template-columns: 1fr; }
+  .avatar { width: 96px; height: 96px; flex: 0 0 96px; }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
