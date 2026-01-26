@@ -22,7 +22,7 @@ function App() {
       <main className="site-content">
         <header className="hero">
           <div className="avatar">
-            <img src="src/assets/hero.png" alt="头像" />
+            <img src='./assets/hero.png' alt="头像" />
           </div>
           <div className="intro">
             <h1>Hello, I'm Weiee</h1>
