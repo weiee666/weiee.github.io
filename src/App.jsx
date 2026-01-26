@@ -1,4 +1,5 @@
 import './App.css'
+import hero from './assets/hero.png'
 
 import Squares from './components/Squares'
 import GlassIcons from './components/GlassIcons'
@@ -22,7 +23,7 @@ function App() {
       <main className="site-content">
         <header className="hero">
           <div className="avatar">
-            <img src='./assets/hero.png' alt="头像" />
+            <img src={hero} alt="头像" />
           </div>
           <div className="intro">
             <h1>Hello, I'm Weiee</h1>
