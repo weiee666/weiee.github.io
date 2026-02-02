@@ -3,7 +3,7 @@ import hero from './assets/hero.png'
 
 import Squares from './components/Squares'
 import GlassIcons from './components/GlassIcons'
-import { BarChart2, Heart, Linkedin, FileText } from 'lucide-react'
+import { BarChart2, Heart, Linkedin, FileText, Github } from 'lucide-react'
 
 function App() {
   return (
@@ -39,7 +39,8 @@ function App() {
               { icon: <BarChart2 size={24} color="#9aa0a6" />, color: '#9aa0a6', label: 'My Tableau Public', href: 'https://public.tableau.com/shared/SZSD2D7DJ?:display_count=n&:origin=viz_share_link' },
               { icon: <Heart size={24} color="#6b6f73" />, color: '#6b6f73', label: 'My Red Book', href: 'https://www.xiaohongshu.com/user/profile/60fbc33200000000010007e5' },
               { icon: <Linkedin size={24} color="#6b6f73" />, color: '#6b6f73', label: 'My LinkedIn', href: 'https://www.linkedin.com' },
-              { icon: <FileText size={24} color="#9aa0a6" />, color: '#9aa0a6', label: 'My Blog', href: '/posts' }
+              { icon: <FileText size={24} color="#9aa0a6" />, color: '#9aa0a6', label: 'My Blog', href: 'https://weiee666.github.io/My_blog/' },
+              { icon: <Github size={24} color="#9aa0a6" />, color: '#9aa0a6', label: 'My GitHub', href: 'https://github.com/weiee666' }
             ];
 
             return (
